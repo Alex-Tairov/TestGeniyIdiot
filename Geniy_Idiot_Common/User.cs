@@ -1,9 +1,8 @@
 ﻿using System;
 
-
 namespace Geniy_Idiot_Common
 {
-    //Класс для юзера
+    //Класс пользователя
     public class User
     {
         public string Name;

@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-//Содержит информацию,которая хранится в файле
-
 namespace Geniy_Idiot_Common
 {
     

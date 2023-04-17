@@ -10,9 +10,8 @@ namespace Geniy_Idiot_Common
         public List<Question> questions;
         private int counter = 0;
         private Question currentQuestion;
-        private User user;
+
         //Обновляем список вопросов
-        
         public QuestionsManager()
         {
             ReStore();

@@ -7,7 +7,7 @@ namespace Geniy_Idiot_Common
     public class FileProvider
     {
        
-        //Записывает данные
+        //Запись данных
         public static void Add(string path, string value)
         {
             var writer = new StreamWriter(path, true, Encoding.UTF8);
@@ -15,13 +15,15 @@ namespace Geniy_Idiot_Common
             writer.Close();
         }
 
-        //Перезаписывает данные
+        //Перезапись данных
         public static void Set(string path, string value)
         {
             var writer = new StreamWriter(path, false, Encoding.UTF8);
             writer.WriteLine(value);
             writer.Close();
         }
+
+        //Получение данных
 
         public static string Get(string path)
         {

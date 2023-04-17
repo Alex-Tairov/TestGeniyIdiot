@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace Geniy_Idiot_Common
 {
     public class ReadFromConsole
@@ -14,12 +13,7 @@ namespace Geniy_Idiot_Common
                 Console.WriteLine("Введите число");
             }
             return result;
-
         }
-        
-     
-        
     }
-
 }
 
