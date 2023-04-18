@@ -15,7 +15,7 @@ namespace Geniy_Idiot_Common
         public Game(User user)
         {
             this.user = user;
-            questions = QuestionsStorage.GetQuestions();
+           // questions = QuestionsStorage.GetQuestions();
             Init();
             questions = QuestionsStorage.GetQuestionsFromFile();
 

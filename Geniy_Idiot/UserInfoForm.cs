@@ -29,5 +29,10 @@ namespace Geniy_Idiot
             }
         
         }
+
+        private void UserInfoForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

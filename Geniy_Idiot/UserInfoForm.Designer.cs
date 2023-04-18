@@ -45,7 +45,7 @@
             // 
             // UserNameTextBox
             // 
-            this.UserNameTextBox.Location = new System.Drawing.Point(151, 166);
+            this.UserNameTextBox.Location = new System.Drawing.Point(148, 169);
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(100, 22);
             this.UserNameTextBox.TabIndex = 1;
@@ -61,7 +61,6 @@
             this.okButton.TabIndex = 2;
             this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
-            //this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // cancelButton
             // 
@@ -84,7 +83,7 @@
             this.Controls.Add(this.questionLabel);
             this.Name = "UserInfoForm";
             this.Text = "UserInfoForm";
-           // this.Load += new System.EventHandler(this.UserInfoForm_Load);
+            this.Load += new System.EventHandler(this.UserInfoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
