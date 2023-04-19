@@ -49,7 +49,17 @@ namespace Geniy_Idiot_Common
             }
         }
 
-        
+        public static void Remove(string textQuestion)
+        {
+            GetQuestionsFromFile().RemoveAll(x => x.Text == textQuestion);
+            
+            SaveQuestions(GetQuestionsFromFile());
+
+        }
+
+
+
+
     }
 }
 

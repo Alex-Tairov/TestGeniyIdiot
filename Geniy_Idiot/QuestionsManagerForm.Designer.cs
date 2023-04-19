@@ -52,6 +52,7 @@ namespace Geniy_Idiot
             this.questionsDataGridView.RowTemplate.Height = 24;
             this.questionsDataGridView.Size = new System.Drawing.Size(662, 150);
             this.questionsDataGridView.TabIndex = 0;
+            //this.questionsDataGridView.SelectionChanged += new System.EventHandler(this.questionsDataGridView_SelectionChanged);
             // 
             // questionNumber
             // 
@@ -90,8 +91,9 @@ namespace Geniy_Idiot
             this.DeleteQuestionbutton.Name = "DeleteQuestionbutton";
             this.DeleteQuestionbutton.Size = new System.Drawing.Size(130, 57);
             this.DeleteQuestionbutton.TabIndex = 2;
-            this.DeleteQuestionbutton.Text = "Удалить вопрос";
+            this.DeleteQuestionbutton.Text = "Удалить вопросы";
             this.DeleteQuestionbutton.UseVisualStyleBackColor = true;
+            this.DeleteQuestionbutton.Click += new System.EventHandler(this.DeleteQuestionbutton_Click);
             // 
             // SetBasedQuestionsbutton
             // 
