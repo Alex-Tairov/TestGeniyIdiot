@@ -52,7 +52,6 @@ namespace Geniy_Idiot
             this.questionsDataGridView.RowTemplate.Height = 24;
             this.questionsDataGridView.Size = new System.Drawing.Size(662, 150);
             this.questionsDataGridView.TabIndex = 0;
-            //this.questionsDataGridView.SelectionChanged += new System.EventHandler(this.questionsDataGridView_SelectionChanged);
             // 
             // questionNumber
             // 
@@ -103,6 +102,7 @@ namespace Geniy_Idiot
             this.SetBasedQuestionsbutton.TabIndex = 3;
             this.SetBasedQuestionsbutton.Text = "Сбросить до базовых вопросов";
             this.SetBasedQuestionsbutton.UseVisualStyleBackColor = true;
+            this.SetBasedQuestionsbutton.Click += new System.EventHandler(this.SetBasedQuestionsbutton_Click);
             // 
             // QuestionsManagerForm
             // 

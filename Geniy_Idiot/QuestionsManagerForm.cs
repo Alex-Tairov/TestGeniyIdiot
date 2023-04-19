@@ -74,6 +74,12 @@ namespace Geniy_Idiot
             SetValuesTable();
         }
 
-      
+        private void SetBasedQuestionsbutton_Click(object sender, EventArgs e)
+        {
+            QuestionsStorage.SaveQuestions(QuestionsStorage.GetQuestions());
+            Controls.Clear();
+            InitializeComponent();
+            SetValuesTable();
+        }
     }
 }

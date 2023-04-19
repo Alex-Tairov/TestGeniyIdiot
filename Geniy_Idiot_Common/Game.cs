@@ -100,7 +100,8 @@ namespace Geniy_Idiot_Common
 
         public void ReStore()
         {
-            questions = QuestionsStorage.GetQuestions();
+            //questions = QuestionsStorage.GetQuestions();
+            questions = QuestionsStorage.GetQuestionsFromFile();
             user.CountRightAnswers = 0;
             currentQuestionNumber = 0;
         }
