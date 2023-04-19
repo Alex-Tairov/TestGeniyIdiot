@@ -41,8 +41,8 @@ namespace Geniy_Idiot
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьУдалитьВопросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,19 +142,19 @@ namespace Geniy_Idiot
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
+            // добавитьУдалитьВопросToolStripMenuItem
+            // 
+            this.добавитьУдалитьВопросToolStripMenuItem.Name = "добавитьУдалитьВопросToolStripMenuItem";
+            this.добавитьУдалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.добавитьУдалитьВопросToolStripMenuItem.Text = "Панель администратора";
+            this.добавитьУдалитьВопросToolStripMenuItem.Click += new System.EventHandler(this.добавитьУдалитьВопросToolStripMenuItem_Click);
+            // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
-            // 
-            // добавитьУдалитьВопросToolStripMenuItem
-            // 
-            this.добавитьУдалитьВопросToolStripMenuItem.Name = "добавитьУдалитьВопросToolStripMenuItem";
-            this.добавитьУдалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
-            this.добавитьУдалитьВопросToolStripMenuItem.Text = "Добавить /Удалить вопрос";
-            this.добавитьУдалитьВопросToolStripMenuItem.Click += new System.EventHandler(this.добавитьУдалитьВопросToolStripMenuItem_Click);
             // 
             // MainForm1
             // 
@@ -169,7 +169,7 @@ namespace Geniy_Idiot
             this.Controls.Add(this.userAnswerTextBox);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm1";
-            this.Text = "MainForm1";
+            this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm1_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();

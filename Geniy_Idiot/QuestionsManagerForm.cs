@@ -27,7 +27,28 @@ namespace Geniy_Idiot
             {
                 var question = questions[i];
                 questionsDataGridView.Rows.Add(i+1,question.Text, question.Answer);
+                
            
+            }
+        }
+
+        private void AddQuestionbutton_Click(object sender, EventArgs e)
+        {
+            var addNewQuestionForm = new AddQuestionForm();
+            addNewQuestionForm.ShowDialog();
+            Controls.Clear();
+            InitializeComponent();
+            SetValuesTable();
+        }
+
+        private void SetValuesTable()
+        {
+            
+            var questions = QuestionsStorage.GetQuestionsFromFile();
+            for (int i = 0; i < questions.Count; i++)
+            {
+                var question = questions[i];
+                questionsDataGridView.Rows.Add(i + 1, question.Text, question.Answer);
             }
         }
     }
