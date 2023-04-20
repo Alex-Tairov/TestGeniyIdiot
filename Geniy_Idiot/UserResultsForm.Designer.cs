@@ -46,9 +46,8 @@
             this.userResultsDataGridView.Name = "userResultsDataGridView";
             this.userResultsDataGridView.RowHeadersWidth = 51;
             this.userResultsDataGridView.RowTemplate.Height = 24;
-            this.userResultsDataGridView.Size = new System.Drawing.Size(909, 586);
+            this.userResultsDataGridView.Size = new System.Drawing.Size(590, 542);
             this.userResultsDataGridView.TabIndex = 0;
-            this.userResultsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userResultsDataGridView_CellContentClick);
             // 
             // UserName
             // 

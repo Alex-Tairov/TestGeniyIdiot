@@ -8,6 +8,7 @@ namespace Geniy_Idiot
     {
         private User user;
         private Game game;
+        private UserInfoForm userInfoForm = new UserInfoForm();
         public MainForm1()
         {
             InitializeComponent();
@@ -15,7 +16,7 @@ namespace Geniy_Idiot
 
         private void MainForm1_Load(object sender, EventArgs e)
         {
-            var userInfoForm = new UserInfoForm();
+           // var userInfoForm = new UserInfoForm();
             if (userInfoForm.ShowDialog(this) == DialogResult.OK)
             {
                 var userName = userInfoForm.UserNameTextBox.Text;//Записываем имя пользователя
@@ -119,11 +120,14 @@ namespace Geniy_Idiot
 
         private void добавитьУдалитьВопросToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            //var questionsManagerForm = new UserResultsForm(UserResult.GetResultsFromFile());
-            var questionsManagerForm = new QuestionsManagerForm(QuestionsStorage.GetQuestions());
-            questionsManagerForm.Show();
-           // userResultsForm.Show();
+            //MessageBox.Show(userInfoForm.UserNameTextBox.Text);
+            var currentUserName = userInfoForm.UserNameTextBox.Text;
+            var authorizationForm = new AuthorizationForm(currentUserName);
+            authorizationForm.Show();
+            
+            //var questionsManagerForm = new QuestionsManagerForm(QuestionsStorage.GetQuestions());
+            //questionsManagerForm.Show();
+           
         }
     }
 }

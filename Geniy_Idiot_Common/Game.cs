@@ -15,11 +15,12 @@ namespace Geniy_Idiot_Common
         public Game(User user)
         {
             this.user = user;
-           // questions = QuestionsStorage.GetQuestions();
+            //questions = QuestionsStorage.GetQuestions();
             Init();
             questions = QuestionsStorage.GetQuestionsFromFile();
+             
 
-
+           
             InitUserResults();
             results = UserResult.GetResultsFromFile();
         }
@@ -101,7 +102,14 @@ namespace Geniy_Idiot_Common
         public void ReStore()
         {
             //questions = QuestionsStorage.GetQuestions();
-            questions = QuestionsStorage.GetQuestionsFromFile();
+            if (questions.Count == 0)
+            {
+                questions = QuestionsStorage.GetQuestions();
+                QuestionsStorage.SaveQuestions(questions);
+            }
+                  
+            else
+                questions = QuestionsStorage.GetQuestionsFromFile();
             user.CountRightAnswers = 0;
             currentQuestionNumber = 0;
         }

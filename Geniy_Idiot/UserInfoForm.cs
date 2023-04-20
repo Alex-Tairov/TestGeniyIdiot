@@ -11,8 +11,6 @@ namespace Geniy_Idiot
             
         }
 
-               
-
         private void UserNameTextBox_TextChanged(object sender, EventArgs e)
         {
             if (UserNameTextBox.Text.Length == 0)
@@ -30,7 +28,7 @@ namespace Geniy_Idiot
         
         }
 
-        private void UserInfoForm_Load(object sender, EventArgs e)
+        private void okButton_Click(object sender, EventArgs e)
         {
 
         }

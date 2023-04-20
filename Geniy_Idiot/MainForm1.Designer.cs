@@ -91,10 +91,11 @@ namespace Geniy_Idiot
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,35 +125,35 @@ namespace Geniy_Idiot
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.newGameToolStripMenuItem.Text = "Новая игра";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.новаяИграToolStripMenuItem_Click_1);
             // 
             // отобразитьПредыдущиеРещультатыToolStripMenuItem
             // 
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Name = "отобразитьПредыдущиеРещультатыToolStripMenuItem";
-            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
-            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Text = "Отобразить предыдущие рещультаты";
+            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Text = "Отобразить предыдущие результаты";
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Click += new System.EventHandler(this.отобразитьПредыдущиеРещультатыToolStripMenuItem_Click);
             // 
             // рестартToolStripMenuItem
             // 
             this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
-            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
             // добавитьУдалитьВопросToolStripMenuItem
             // 
             this.добавитьУдалитьВопросToolStripMenuItem.Name = "добавитьУдалитьВопросToolStripMenuItem";
-            this.добавитьУдалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.добавитьУдалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.добавитьУдалитьВопросToolStripMenuItem.Text = "Панель администратора";
             this.добавитьУдалитьВопросToolStripMenuItem.Click += new System.EventHandler(this.добавитьУдалитьВопросToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(354, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -160,6 +161,7 @@ namespace Geniy_Idiot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.questionNumberLabel);
             this.Controls.Add(this.questionTextLabel);

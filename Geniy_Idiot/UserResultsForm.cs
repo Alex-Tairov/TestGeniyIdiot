@@ -13,11 +13,7 @@ namespace Geniy_Idiot
             InitializeComponent();
             this.userResults = userResults;
         }
-
-        private void userResultsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+                
 
         private void UserResultsForm_Load(object sender, EventArgs e)
         {
