@@ -36,21 +36,23 @@ namespace Geniy_Idiot
             this.AddQuestionbutton = new System.Windows.Forms.Button();
             this.DeleteQuestionbutton = new System.Windows.Forms.Button();
             this.SetBasedQuestionsbutton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.questionsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // questionsDataGridView
             // 
+            this.questionsDataGridView.BackgroundColor = System.Drawing.SystemColors.Info;
             this.questionsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.questionsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.questionNumber,
             this.Question,
             this.Answer});
-            this.questionsDataGridView.Location = new System.Drawing.Point(21, 21);
+            this.questionsDataGridView.Location = new System.Drawing.Point(114, 67);
             this.questionsDataGridView.Name = "questionsDataGridView";
             this.questionsDataGridView.RowHeadersWidth = 51;
             this.questionsDataGridView.RowTemplate.Height = 24;
-            this.questionsDataGridView.Size = new System.Drawing.Size(662, 150);
+            this.questionsDataGridView.Size = new System.Drawing.Size(519, 266);
             this.questionsDataGridView.TabIndex = 0;
             // 
             // questionNumber
@@ -76,48 +78,67 @@ namespace Geniy_Idiot
             // 
             // AddQuestionbutton
             // 
-            this.AddQuestionbutton.Location = new System.Drawing.Point(73, 240);
+            this.AddQuestionbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.AddQuestionbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddQuestionbutton.Location = new System.Drawing.Point(76, 352);
             this.AddQuestionbutton.Name = "AddQuestionbutton";
-            this.AddQuestionbutton.Size = new System.Drawing.Size(127, 57);
+            this.AddQuestionbutton.Size = new System.Drawing.Size(155, 60);
             this.AddQuestionbutton.TabIndex = 1;
             this.AddQuestionbutton.Text = "Добавить вопрос";
-            this.AddQuestionbutton.UseVisualStyleBackColor = true;
+            this.AddQuestionbutton.UseVisualStyleBackColor = false;
             this.AddQuestionbutton.Click += new System.EventHandler(this.AddQuestionbutton_Click);
             // 
             // DeleteQuestionbutton
             // 
-            this.DeleteQuestionbutton.Location = new System.Drawing.Point(482, 240);
+            this.DeleteQuestionbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.DeleteQuestionbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteQuestionbutton.Location = new System.Drawing.Point(287, 352);
             this.DeleteQuestionbutton.Name = "DeleteQuestionbutton";
-            this.DeleteQuestionbutton.Size = new System.Drawing.Size(130, 57);
+            this.DeleteQuestionbutton.Size = new System.Drawing.Size(155, 60);
             this.DeleteQuestionbutton.TabIndex = 2;
             this.DeleteQuestionbutton.Text = "Удалить вопросы";
-            this.DeleteQuestionbutton.UseVisualStyleBackColor = true;
+            this.DeleteQuestionbutton.UseVisualStyleBackColor = false;
             this.DeleteQuestionbutton.Click += new System.EventHandler(this.DeleteQuestionbutton_Click);
             // 
             // SetBasedQuestionsbutton
             // 
-            this.SetBasedQuestionsbutton.Location = new System.Drawing.Point(315, 338);
+            this.SetBasedQuestionsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.SetBasedQuestionsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SetBasedQuestionsbutton.Location = new System.Drawing.Point(493, 352);
             this.SetBasedQuestionsbutton.Name = "SetBasedQuestionsbutton";
-            this.SetBasedQuestionsbutton.Size = new System.Drawing.Size(148, 50);
+            this.SetBasedQuestionsbutton.Size = new System.Drawing.Size(155, 60);
             this.SetBasedQuestionsbutton.TabIndex = 3;
             this.SetBasedQuestionsbutton.Text = "Сбросить до базовых вопросов";
-            this.SetBasedQuestionsbutton.UseVisualStyleBackColor = true;
+            this.SetBasedQuestionsbutton.UseVisualStyleBackColor = false;
             this.SetBasedQuestionsbutton.Click += new System.EventHandler(this.SetBasedQuestionsbutton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(248, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Панель администратора";
             // 
             // QuestionsManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SetBasedQuestionsbutton);
             this.Controls.Add(this.DeleteQuestionbutton);
             this.Controls.Add(this.AddQuestionbutton);
             this.Controls.Add(this.questionsDataGridView);
             this.Name = "QuestionsManagerForm";
-            this.Text = "QuestionsManagerForm";
+            this.Text = "ГенийИдиот";
             this.Load += new System.EventHandler(this.QuestionsManagerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.questionsDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -130,5 +151,6 @@ namespace Geniy_Idiot
         private System.Windows.Forms.Button AddQuestionbutton;
         private System.Windows.Forms.Button DeleteQuestionbutton;
         private System.Windows.Forms.Button SetBasedQuestionsbutton;
+        private System.Windows.Forms.Label label1;
     }
 }

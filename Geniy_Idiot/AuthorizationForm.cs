@@ -7,7 +7,7 @@ namespace Geniy_Idiot
 {
     public partial class AuthorizationForm : Form
     {
-        private Dictionary<string, string> userSpecialists =new Dictionary<string, string> { { "admin", "12345" } };
+        private Dictionary<string, string> adminDct =new Dictionary<string, string> { { "admin", "12345" } };
 
         private string currentUserName;
         
@@ -17,17 +17,11 @@ namespace Geniy_Idiot
             this.currentUserName = currentUserName;
         }
 
-        private void AuthorizationForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void authorizationOKbutton_Click(object sender, EventArgs e)
         {
             if (Autorization(authorizationTextBox.Text, currentUserName))
             {
-                // MessageBox.Show("Успех");
-                //Controls.Clear();
                 Close();
                 var questionsManagerForm = new QuestionsManagerForm(QuestionsStorage.GetQuestions());
                 questionsManagerForm.Show();
@@ -35,17 +29,19 @@ namespace Geniy_Idiot
             else
             {
                 MessageBox.Show("Введите правильный пароль");
+                authorizationTextBox.Clear();
             }
             
         }
 
         private bool Autorization(string password, string currentName)
         {
-            if (userSpecialists[currentName] == password)
+            if (adminDct[currentName] == password)
             {
                 return true;
             }
             return false;
+     
         }
     }
 }

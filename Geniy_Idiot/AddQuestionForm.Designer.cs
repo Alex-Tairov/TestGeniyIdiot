@@ -39,50 +39,56 @@ namespace Geniy_Idiot
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(219, 81);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(171, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 17);
+            this.label1.Size = new System.Drawing.Size(251, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Введите текст вопроса";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 256);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(211, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 17);
+            this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Введите ответ";
             // 
             // AddQuestionTextBox
             // 
-            this.AddQuestionTextBox.Location = new System.Drawing.Point(246, 148);
+            this.AddQuestionTextBox.Location = new System.Drawing.Point(44, 94);
             this.AddQuestionTextBox.Name = "AddQuestionTextBox";
-            this.AddQuestionTextBox.Size = new System.Drawing.Size(100, 22);
+            this.AddQuestionTextBox.Size = new System.Drawing.Size(524, 22);
             this.AddQuestionTextBox.TabIndex = 2;
             // 
             // AddAnswerTextBox
             // 
-            this.AddAnswerTextBox.Location = new System.Drawing.Point(247, 319);
+            this.AddAnswerTextBox.Location = new System.Drawing.Point(142, 220);
             this.AddAnswerTextBox.Name = "AddAnswerTextBox";
-            this.AddAnswerTextBox.Size = new System.Drawing.Size(100, 22);
+            this.AddAnswerTextBox.Size = new System.Drawing.Size(298, 22);
             this.AddAnswerTextBox.TabIndex = 3;
+            this.AddAnswerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddAnswerTextBox_KeyPress);
             // 
             // EnterQuestionButton
             // 
-            this.EnterQuestionButton.Location = new System.Drawing.Point(247, 378);
+            this.EnterQuestionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.EnterQuestionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EnterQuestionButton.Location = new System.Drawing.Point(212, 289);
             this.EnterQuestionButton.Name = "EnterQuestionButton";
-            this.EnterQuestionButton.Size = new System.Drawing.Size(100, 43);
+            this.EnterQuestionButton.Size = new System.Drawing.Size(164, 53);
             this.EnterQuestionButton.TabIndex = 4;
-            this.EnterQuestionButton.Text = "OK";
-            this.EnterQuestionButton.UseVisualStyleBackColor = true;
+            this.EnterQuestionButton.Text = "Добавить вопрос";
+            this.EnterQuestionButton.UseVisualStyleBackColor = false;
             this.EnterQuestionButton.Click += new System.EventHandler(this.EnterQuestionButton_Click);
             // 
             // AddQuestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(608, 374);
             this.Controls.Add(this.EnterQuestionButton);
             this.Controls.Add(this.AddAnswerTextBox);
             this.Controls.Add(this.AddQuestionTextBox);

@@ -75,7 +75,7 @@ namespace Geniy_Idiot
            e.Handled = !(Char.IsDigit(e.KeyChar) || (e.KeyChar == 8));
            if (e.Handled == true)
            {
-               MessageBox.Show("Введите корректно данные");
+               MessageBox.Show("Ответ должен быть числом");
            }
             
         }
@@ -118,16 +118,20 @@ namespace Geniy_Idiot
             Close();
         }
 
-        private void добавитьУдалитьВопросToolStripMenuItem_Click(object sender, EventArgs e)
+        private void adminPanelMenuButton_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(userInfoForm.UserNameTextBox.Text);
+                     
             var currentUserName = userInfoForm.UserNameTextBox.Text;
-            var authorizationForm = new AuthorizationForm(currentUserName);
-            authorizationForm.Show();
-            
-            //var questionsManagerForm = new QuestionsManagerForm(QuestionsStorage.GetQuestions());
-            //questionsManagerForm.Show();
-           
+            if (currentUserName == "admin")
+            {
+                var authorizationForm = new AuthorizationForm(currentUserName);
+                authorizationForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("У вас нет прав доступа");
+            }
+
         }
     }
 }

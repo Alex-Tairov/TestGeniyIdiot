@@ -21,8 +21,6 @@ namespace Geniy_Idiot
             {
                 var question = questions[i];
                 questionsDataGridView.Rows.Add(i+1,question.Text, question.Answer);
-                
-           
             }
         }
 
@@ -51,18 +49,14 @@ namespace Geniy_Idiot
             var deletedRows = questionsDataGridView.SelectedRows;
             var lst = QuestionsStorage.GetQuestionsFromFile();
             MessageBox.Show(lst.Count.ToString());
-           // MessageBox.Show(deletedRows.Count.ToString());
             for (int i = 0; i < deletedRows.Count; i++)
             {
                 var row = deletedRows[i];
                 var textQuestions = row.Cells[1]?.Value?.ToString();
                 if (textQuestions != null)
                     lst.RemoveAll(x=>x.Text==textQuestions);
-                   // MessageBox.Show(textQuestions);
-                    //QuestionsStorage.Remove(textQuestions);
             }
             QuestionsStorage.SaveQuestions(lst);
-            //MessageBox.Show(lst.Count.ToString());
             Controls.Clear();
             InitializeComponent();
             SetValuesTable();

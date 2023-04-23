@@ -6,7 +6,6 @@ namespace Geniy_Idiot
 {
     public partial class AddQuestionForm : Form
     {
-        //private QuestionsStorage questionsStorage;
         public AddQuestionForm()
         {
             InitializeComponent();
@@ -19,15 +18,7 @@ namespace Geniy_Idiot
 
         private void EnterQuestionButton_Click(object sender, EventArgs e)
         {
-            //var q1 = AddQuestionTextBox.Text;
-            //var a1 = Convert.ToInt32(AddAnswerTextBox.Text);
-            //var newQuestion = new Question(q1, a1);
-            //var lst = QuestionsStorage.GetQuestionsFromFile();
-            //lst.Add(newQuestion);
-            //QuestionsStorage.SaveQuestions(lst);
-            //Close();
-
-            var lst = QuestionsStorage.GetQuestionsFromFile();
+            var questionsList = QuestionsStorage.GetQuestionsFromFile();
             if (AddQuestionTextBox.Text == "")
             {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
@@ -39,8 +30,8 @@ namespace Geniy_Idiot
                 {
                     var question= AddQuestionTextBox.Text;
                     var answer = Convert.ToInt32(AddAnswerTextBox.Text);
-                    lst.Add(new Question(question, answer));
-                    QuestionsStorage.SaveQuestions(lst);
+                    questionsList.Add(new Question(question, answer));
+                    QuestionsStorage.SaveQuestions(questionsList);
                     EnterQuestionButton.DialogResult = DialogResult.OK;
                     Close();
                 }
@@ -49,11 +40,16 @@ namespace Geniy_Idiot
                     MessageBoxButtons buttons = MessageBoxButtons.OK;
                     MessageBox.Show("Пожалуйста, введите число!", "Неверный ввод", buttons);
                 }
-                catch
-                {
-                    MessageBoxButtons buttons = MessageBoxButtons.OK;
-                    MessageBox.Show("Неверный ввод!", "Неверный ввод", buttons);
-                }
+                
+            }
+        }
+
+        private void AddAnswerTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(Char.IsDigit(e.KeyChar) || (e.KeyChar == 8));
+            if (e.Handled == true)
+            {
+                MessageBox.Show("Ответ должен быть числом");
             }
         }
     }

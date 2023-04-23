@@ -41,16 +41,16 @@ namespace Geniy_Idiot
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьУдалитьВопросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminPanelMenuButton = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // userAnswerTextBox
             // 
-            this.userAnswerTextBox.Location = new System.Drawing.Point(275, 165);
+            this.userAnswerTextBox.Location = new System.Drawing.Point(233, 178);
             this.userAnswerTextBox.Name = "userAnswerTextBox";
-            this.userAnswerTextBox.Size = new System.Drawing.Size(100, 22);
+            this.userAnswerTextBox.Size = new System.Drawing.Size(135, 22);
             this.userAnswerTextBox.TabIndex = 0;
             this.userAnswerTextBox.Text = "1";
             this.userAnswerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.userAnswerTextBox_KeyPress);
@@ -63,29 +63,35 @@ namespace Geniy_Idiot
             // 
             // nextQuestionButton_Click
             // 
-            this.nextQuestionButton_Click.Location = new System.Drawing.Point(260, 233);
+            this.nextQuestionButton_Click.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.nextQuestionButton_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nextQuestionButton_Click.ForeColor = System.Drawing.Color.Black;
+            this.nextQuestionButton_Click.Location = new System.Drawing.Point(233, 227);
             this.nextQuestionButton_Click.Name = "nextQuestionButton_Click";
-            this.nextQuestionButton_Click.Size = new System.Drawing.Size(135, 75);
+            this.nextQuestionButton_Click.Size = new System.Drawing.Size(135, 43);
             this.nextQuestionButton_Click.TabIndex = 1;
             this.nextQuestionButton_Click.Text = "Далее";
-            this.nextQuestionButton_Click.UseVisualStyleBackColor = true;
+            this.nextQuestionButton_Click.UseVisualStyleBackColor = false;
             this.nextQuestionButton_Click.Click += new System.EventHandler(this.nextQuestionButton_Click_Click);
             // 
             // questionTextLabel
             // 
             this.questionTextLabel.AutoSize = true;
-            this.questionTextLabel.Location = new System.Drawing.Point(272, 117);
+            this.questionTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.questionTextLabel.Location = new System.Drawing.Point(107, 124);
             this.questionTextLabel.Name = "questionTextLabel";
             this.questionTextLabel.Size = new System.Drawing.Size(104, 17);
             this.questionTextLabel.TabIndex = 2;
             this.questionTextLabel.Text = "Текст вопроса";
+            this.questionTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // questionNumberLabel
             // 
             this.questionNumberLabel.AutoSize = true;
-            this.questionNumberLabel.Location = new System.Drawing.Point(296, 42);
+            this.questionNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.questionNumberLabel.Location = new System.Drawing.Point(230, 73);
             this.questionNumberLabel.Name = "questionNumberLabel";
-            this.questionNumberLabel.Size = new System.Drawing.Size(70, 17);
+            this.questionNumberLabel.Size = new System.Drawing.Size(77, 17);
             this.questionNumberLabel.TabIndex = 3;
             this.questionNumberLabel.Text = "Вопрос№";
             // 
@@ -93,9 +99,9 @@ namespace Geniy_Idiot
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(660, 30);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,7 +112,7 @@ namespace Geniy_Idiot
             this.менюToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(660, 30);
             this.menuStrip2.TabIndex = 5;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -116,10 +122,10 @@ namespace Geniy_Idiot
             this.newGameToolStripMenuItem,
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem,
             this.рестартToolStripMenuItem,
-            this.добавитьУдалитьВопросToolStripMenuItem,
+            this.adminPanelMenuButton,
             this.выходToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
-            this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.менюToolStripMenuItem.Text = "Меню";
             // 
             // newGameToolStripMenuItem
@@ -143,12 +149,12 @@ namespace Geniy_Idiot
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
-            // добавитьУдалитьВопросToolStripMenuItem
+            // adminPanelMenuButton
             // 
-            this.добавитьУдалитьВопросToolStripMenuItem.Name = "добавитьУдалитьВопросToolStripMenuItem";
-            this.добавитьУдалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.добавитьУдалитьВопросToolStripMenuItem.Text = "Панель администратора";
-            this.добавитьУдалитьВопросToolStripMenuItem.Click += new System.EventHandler(this.добавитьУдалитьВопросToolStripMenuItem_Click);
+            this.adminPanelMenuButton.Name = "adminPanelMenuButton";
+            this.adminPanelMenuButton.Size = new System.Drawing.Size(349, 26);
+            this.adminPanelMenuButton.Text = "Панель администратора";
+            this.adminPanelMenuButton.Click += new System.EventHandler(this.adminPanelMenuButton_Click);
             // 
             // выходToolStripMenuItem
             // 
@@ -162,7 +168,7 @@ namespace Geniy_Idiot
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(660, 329);
             this.Controls.Add(this.questionNumberLabel);
             this.Controls.Add(this.questionTextLabel);
             this.Controls.Add(this.menuStrip1);
@@ -171,7 +177,7 @@ namespace Geniy_Idiot
             this.Controls.Add(this.userAnswerTextBox);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm1";
-            this.Text = "MainForm";
+            this.Text = "ГенийИдиот";
             this.Load += new System.EventHandler(this.MainForm1_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
@@ -194,6 +200,6 @@ namespace Geniy_Idiot
         private System.Windows.Forms.ToolStripMenuItem отобразитьПредыдущиеРещультатыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem рестартToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem добавитьУдалитьВопросToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminPanelMenuButton;
     }
 }
