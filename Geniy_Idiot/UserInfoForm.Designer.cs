@@ -64,6 +64,7 @@
             this.okButton.TabIndex = 2;
             this.okButton.Text = "Далее";
             this.okButton.UseVisualStyleBackColor = false;
+           // this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // cancelButton
             // 
@@ -88,6 +89,7 @@
             this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.questionLabel);
             this.Name = "UserInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ГенийИдиот";
             this.ResumeLayout(false);
             this.PerformLayout();

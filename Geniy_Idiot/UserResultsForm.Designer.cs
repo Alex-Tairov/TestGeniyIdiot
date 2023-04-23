@@ -50,6 +50,7 @@
             this.userResultsDataGridView.RowTemplate.Height = 24;
             this.userResultsDataGridView.Size = new System.Drawing.Size(590, 476);
             this.userResultsDataGridView.TabIndex = 0;
+            //this.userResultsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userResultsDataGridView_CellContentClick);
             // 
             // UserName
             // 
@@ -91,6 +92,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.userResultsDataGridView);
             this.Name = "UserResultsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ГенийИдиот";
             this.Load += new System.EventHandler(this.UserResultsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userResultsDataGridView)).EndInit();

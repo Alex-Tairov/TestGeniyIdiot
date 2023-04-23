@@ -13,7 +13,6 @@ namespace Geniy_Idiot
             InitializeComponent();
             this.userResults = userResults;
         }
-                
 
         private void UserResultsForm_Load(object sender, EventArgs e)
         {
@@ -23,7 +22,6 @@ namespace Geniy_Idiot
                 var userResult = results[i];
                 userResultsDataGridView.Rows.Add(userResult.Name, userResult.CountRightAnswers, userResult.Diagnos);
             }
-
         }
     }
 }

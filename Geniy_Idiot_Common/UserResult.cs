@@ -32,20 +32,13 @@ namespace Geniy_Idiot_Common
         {
             var serializedResults = JsonConvert.SerializeObject(results, Formatting.Indented);
             FileProvider.Set(userResultsPath, serializedResults);
-
         }
 
         public static List<UserResult> GetResultsFromFile()
         {
-            //Считываем содержимое файла
             var serializedResults = FileProvider.Get(userResultsPath);
-            //Диссериализация(возвращает указанный тип данных)
             var results = JsonConvert.DeserializeObject<List<UserResult>>(serializedResults);
             return results;
-
         }
-
-        
-
     }
 }

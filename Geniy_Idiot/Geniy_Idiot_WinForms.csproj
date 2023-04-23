@@ -58,6 +58,12 @@
     <Compile Include="AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinishGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishGameForm.Designer.cs">
+      <DependentUpon>FinishGameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishGameForm.resx">
+      <DependentUpon>FinishGameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm1.resx">
       <DependentUpon>MainForm1.cs</DependentUpon>

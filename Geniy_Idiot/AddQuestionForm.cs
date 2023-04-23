@@ -11,11 +11,6 @@ namespace Geniy_Idiot
             InitializeComponent();
         }
 
-        private void AddQuestionForm_Load(object sender, EventArgs e)
-        {
-           
-        }
-
         private void EnterQuestionButton_Click(object sender, EventArgs e)
         {
             var questionsList = QuestionsStorage.GetQuestionsFromFile();
@@ -40,7 +35,6 @@ namespace Geniy_Idiot
                     MessageBoxButtons buttons = MessageBoxButtons.OK;
                     MessageBox.Show("Пожалуйста, введите число!", "Неверный ввод", buttons);
                 }
-                
             }
         }
 

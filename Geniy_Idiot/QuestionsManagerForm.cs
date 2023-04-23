@@ -48,7 +48,6 @@ namespace Geniy_Idiot
         {
             var deletedRows = questionsDataGridView.SelectedRows;
             var lst = QuestionsStorage.GetQuestionsFromFile();
-            MessageBox.Show(lst.Count.ToString());
             for (int i = 0; i < deletedRows.Count; i++)
             {
                 var row = deletedRows[i];

@@ -127,13 +127,14 @@ namespace Geniy_Idiot
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(769, 467);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SetBasedQuestionsbutton);
             this.Controls.Add(this.DeleteQuestionbutton);
             this.Controls.Add(this.AddQuestionbutton);
             this.Controls.Add(this.questionsDataGridView);
             this.Name = "QuestionsManagerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ГенийИдиот";
             this.Load += new System.EventHandler(this.QuestionsManagerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.questionsDataGridView)).EndInit();

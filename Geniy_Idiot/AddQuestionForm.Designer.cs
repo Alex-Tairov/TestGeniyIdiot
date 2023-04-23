@@ -95,8 +95,9 @@ namespace Geniy_Idiot
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddQuestionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddQuestionForm";
-            this.Load += new System.EventHandler(this.AddQuestionForm_Load);
+            //this.Load += new System.EventHandler(this.AddQuestionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

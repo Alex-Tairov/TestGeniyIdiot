@@ -40,7 +40,6 @@ namespace Geniy_Idiot
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminPanelMenuButton = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
@@ -99,9 +98,9 @@ namespace Geniy_Idiot
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(660, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(660, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -112,7 +111,7 @@ namespace Geniy_Idiot
             this.менюToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(660, 30);
+            this.menuStrip2.Size = new System.Drawing.Size(660, 28);
             this.menuStrip2.TabIndex = 5;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -121,45 +120,37 @@ namespace Geniy_Idiot
             this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem,
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem,
-            this.рестартToolStripMenuItem,
             this.adminPanelMenuButton,
             this.выходToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
-            this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.менюToolStripMenuItem.Text = "Меню";
             // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(295, 26);
             this.newGameToolStripMenuItem.Text = "Новая игра";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.новаяИграToolStripMenuItem_Click_1);
             // 
             // отобразитьПредыдущиеРещультатыToolStripMenuItem
             // 
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Name = "отобразитьПредыдущиеРещультатыToolStripMenuItem";
-            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Text = "Отобразить предыдущие результаты";
+            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Size = new System.Drawing.Size(295, 26);
+            this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Text = "Отобразить результаты игры";
             this.отобразитьПредыдущиеРещультатыToolStripMenuItem.Click += new System.EventHandler(this.отобразитьПредыдущиеРещультатыToolStripMenuItem_Click);
-            // 
-            // рестартToolStripMenuItem
-            // 
-            this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
-            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.рестартToolStripMenuItem.Text = "Рестарт";
-            this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
             // adminPanelMenuButton
             // 
             this.adminPanelMenuButton.Name = "adminPanelMenuButton";
-            this.adminPanelMenuButton.Size = new System.Drawing.Size(349, 26);
+            this.adminPanelMenuButton.Size = new System.Drawing.Size(295, 26);
             this.adminPanelMenuButton.Text = "Панель администратора";
             this.adminPanelMenuButton.Click += new System.EventHandler(this.adminPanelMenuButton_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(295, 26);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -177,6 +168,7 @@ namespace Geniy_Idiot
             this.Controls.Add(this.userAnswerTextBox);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ГенийИдиот";
             this.Load += new System.EventHandler(this.MainForm1_Load);
             this.menuStrip2.ResumeLayout(false);
@@ -198,7 +190,6 @@ namespace Geniy_Idiot
         private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отобразитьПредыдущиеРещультатыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рестартToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminPanelMenuButton;
     }

@@ -73,7 +73,8 @@ namespace Geniy_Idiot
             this.Controls.Add(this.authorizationTextBox);
             this.Controls.Add(this.label1);
             this.Name = "AuthorizationForm";
-            this.Text = "AuthorizationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ГенийИдиот";
             this.ResumeLayout(false);
             this.PerformLayout();
 

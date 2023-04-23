@@ -19,6 +19,11 @@ namespace Geniy_Idiot
            // var userInfoForm = new UserInfoForm();
             if (userInfoForm.ShowDialog(this) == DialogResult.OK)
             {
+
+                var instructionText = string.Format("В игре \"Гений Идиот\" Вам будут задаваться вопросы, \n" +
+                                                    "на которые нужно будет давать целочисленные ответы.");
+                MessageBox.Show(instructionText);
+
                 var userName = userInfoForm.UserNameTextBox.Text;//Записываем имя пользователя
                 user = new User(userName);
                 game = new Game(user);
@@ -37,11 +42,10 @@ namespace Geniy_Idiot
             if (game.IsEnd())
             {
                 var diagnose = game.CalculateDiagnose();
-                MessageBox.Show(game.CalculateDiagnose());
+                var finishResultForm = new FinishGameForm(diagnose);
+                finishResultForm.Show();
                 game.SaveResult();
-                
                 nextQuestionButton_Click.Enabled = false;
-               // nextQuestionButton.Enabled = false;
                 return;
 
             }
@@ -55,6 +59,7 @@ namespace Geniy_Idiot
         //Обрабатываем нажатие на кнопку "Далее"
         private void nextQuestionButton_Click_Click(object sender, EventArgs e)
         {
+            
             var len = userAnswerTextBox.Text.Length;
             if (len == 0)
             {
@@ -120,7 +125,6 @@ namespace Geniy_Idiot
 
         private void adminPanelMenuButton_Click(object sender, EventArgs e)
         {
-                     
             var currentUserName = userInfoForm.UserNameTextBox.Text;
             if (currentUserName == "admin")
             {
@@ -131,7 +135,6 @@ namespace Geniy_Idiot
             {
                 MessageBox.Show("У вас нет прав доступа");
             }
-
         }
     }
 }
