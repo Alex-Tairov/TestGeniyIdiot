@@ -48,9 +48,8 @@
             this.userResultsDataGridView.Name = "userResultsDataGridView";
             this.userResultsDataGridView.RowHeadersWidth = 51;
             this.userResultsDataGridView.RowTemplate.Height = 24;
-            this.userResultsDataGridView.Size = new System.Drawing.Size(590, 476);
+            this.userResultsDataGridView.Size = new System.Drawing.Size(590, 238);
             this.userResultsDataGridView.TabIndex = 0;
-            //this.userResultsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userResultsDataGridView_CellContentClick);
             // 
             // UserName
             // 
@@ -88,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(624, 591);
+            this.ClientSize = new System.Drawing.Size(624, 364);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.userResultsDataGridView);
             this.Name = "UserResultsForm";
